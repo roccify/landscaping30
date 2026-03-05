@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import ContactInfo from '../components/ContactInfo.astro';
+import ContactForm from '../components/ContactForm.astro';
+import MapEmbed from '../components/MapEmbed.astro';
+import CTA from '../components/CTA.astro';
+import content from '../data/content.json';
+
+const seo = content.seo.contact;
+const hero = content.heroes.contact;
+---
+
+<Layout title={seo.title} description={seo.description} ogImage={seo.ogImage} page="contact">
+ <Hero
+ headline={hero.headline}
+ subheadline={hero.subheadline}
+ image={hero.image}
+ />
+ <ContactInfo />
+ <ContactForm />
+ <MapEmbed />
+ <CTA />
+</Layout>

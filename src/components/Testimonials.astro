@@ -1,0 +1,41 @@
+---
+import content from '../data/content.json';
+const testimonials = content.testimonials;
+---
+
+<section class="py-10 md:py-16 bg-gray-50">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="text-center mb-12">
+ <h2 class="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+ </div>
+
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+ {testimonials.map((t, i) => (
+ <div
+ class="group relative bg-white rounded-xl p-8 border-l-4 border-brand-500 hover:border-brand-600 transition-all duration-300 hover:shadow-lg flex flex-col"
+
+
+ >
+ <!-- Decorative quote mark -->
+ <div class="absolute top-4 right-5 font-display text-7xl leading-none text-brand-100 pointer-events-none select-none" aria-hidden="true">"</div>
+
+ <!-- Stars -->
+ <div class="flex gap-0.5 mb-4 text-brand-500">
+ {Array.from({ length: t.rating }).map(() => (
+ <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+ ))}
+ </div>
+
+ <!-- Quote -->
+ <p class="relative text-gray-700 leading-relaxed mb-6 italic flex-1">"{t.text}"</p>
+
+ <!-- Attribution -->
+ <div>
+ <p class="font-semibold text-gray-900">{t.name}</p>
+ <p class="text-gray-500 text-sm">{t.location}</p>
+ </div>
+ </div>
+ ))}
+ </div>
+ </div>
+</section>

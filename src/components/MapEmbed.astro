@@ -1,0 +1,21 @@
+---
+import content from '../data/content.json';
+---
+
+<section class="bg-white">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+ <div class="rounded-xl overflow-hidden shadow-lg border border-gray-200">
+ <iframe
+ src={content.contact.googleMapsEmbed}
+ width="100%"
+ height="400"
+ style="border:0;"
+ allowfullscreen=""
+ loading="lazy"
+ referrerpolicy="no-referrer-when-downgrade"
+ title={content.contact.mapCaption}
+ ></iframe>
+ </div>
+ <p class="text-center text-gray-500 text-sm mt-4">{content.contact.mapCaption}</p>
+ </div>
+</section>

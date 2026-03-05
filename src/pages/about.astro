@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import AboutStory from '../components/AboutStory.astro';
+import AboutTeam from '../components/AboutTeam.astro';
+import AboutCredentials from '../components/AboutCredentials.astro';
+import AboutFacts from '../components/AboutFacts.astro';
+import CTA from '../components/CTA.astro';
+import content from '../data/content.json';
+
+const seo = content.seo.about;
+const hero = content.heroes.about;
+---
+
+<Layout title={seo.title} description={seo.description} ogImage={seo.ogImage} page="about">
+ <Hero
+ headline={hero.headline}
+ subheadline={hero.subheadline}
+ image={hero.image}
+ />
+ <AboutStory />
+ <AboutTeam />
+ <AboutCredentials />
+ <AboutFacts />
+ <CTA />
+</Layout>

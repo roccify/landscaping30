@@ -1,0 +1,56 @@
+---
+import content from '../data/content.json';
+const gallery = content.gallery || [];
+const showGallery = gallery.length > 0;
+---
+
+{showGallery && (
+  <section class="py-10 md:py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Work</h2>
+        <p class="text-gray-500 max-w-xl mx-auto">A look at some of our recent landscaping projects across the Madison area.</p>
+      </div>
+
+      <div class="gallery-grid">
+        {gallery.map((item) => (
+          <div class="gallery-item">
+            <img src={item.url} alt={item.alt} />
+          </div>
+        ))}
+        <!-- Invisible spacer — iOS Safari workaround -->
+        <div aria-hidden="true" style="height:1px;overflow:hidden;opacity:0;pointer-events:none;"></div>
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  @media (min-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+  }
+  .gallery-item {
+    position: relative;
+    padding-bottom: 65%;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background: linear-gradient(135deg, #166534, #22c55e);
+  }
+  .gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+</style>

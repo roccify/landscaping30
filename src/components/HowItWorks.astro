@@ -1,0 +1,30 @@
+---
+import content from '../data/content.json';
+const { headline, subheadline, steps } = content.howItWorks;
+---
+
+<section class="py-10 md:py-16 bg-white">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="text-center mb-14">
+ <h2 class="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-3">{headline}</h2>
+ <p class="text-gray-500 max-w-lg mx-auto">{subheadline}</p>
+ </div>
+
+ <div class="relative max-w-3xl mx-auto">
+ <!-- Connecting line (desktop only) -->
+ <div class="hidden md:block absolute top-7 left-1/4 right-1/4 h-0.5 bg-brand-200" aria-hidden="true"></div>
+
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
+ {steps.map((step, i) => (
+ <div class="text-center relative">
+ <div class="relative z-10 w-14 h-14 rounded-full bg-brand-600 text-white flex items-center justify-center mx-auto mb-5 shadow-lg ">
+ <span class="font-display font-bold text-xl">{step.number}</span>
+ </div>
+ <h3 class="font-display text-lg font-semibold text-gray-900 mb-2">{step.title}</h3>
+ <p class="text-gray-500 text-sm leading-relaxed max-w-[16rem] mx-auto">{step.description}</p>
+ </div>
+ ))}
+ </div>
+ </div>
+ </div>
+</section>

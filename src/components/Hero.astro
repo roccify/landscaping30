@@ -1,0 +1,64 @@
+---
+interface Props {
+  headline: string;
+  subheadline: string;
+  image: { url: string; alt: string; fallback: string };
+  ctaPrimary?: { label: string; href: string };
+  ctaSecondary?: { label: string; href: string };
+  tall?: boolean;
+}
+
+const { headline, subheadline, image, ctaPrimary, ctaSecondary, tall = false } = Astro.props;
+const heightClass = tall ? 'min-h-[80vh]' : 'min-h-[50vh] md:min-h-[55vh]';
+---
+
+<section class={`relative ${heightClass} flex items-center justify-center overflow-hidden`}>
+  <!-- Background: gradient fallback always visible -->
+  <div class="absolute inset-0" style={`background: ${image.fallback};`}></div>
+
+  <!-- Background image on top of gradient -->
+  <img
+    src={image.url}
+    alt={image.alt}
+    class="absolute inset-0 w-full h-full object-cover"
+    loading={tall ? "eager" : "lazy"}
+    onerror="this.style.display='none'"
+  />
+
+  <!-- Dark overlay -->
+  <div class="absolute inset-0 bg-black" style="opacity: 0.55;"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center text-white pt-20">
+    <h1 class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+      {headline}
+    </h1>
+    <p class="text-base sm:text-lg md:text-xl text-white opacity-80 max-w-2xl mx-auto mb-8 leading-relaxed">
+      {subheadline}
+    </p>
+
+    {(ctaPrimary || ctaSecondary) && (
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        {ctaPrimary && (
+          <a href={ctaPrimary.href} class="inline-block bg-brand-600 hover:bg-brand-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:shadow-lg hover:-translate-y-0.5">
+            {ctaPrimary.label}
+          </a>
+        )}
+        {ctaSecondary && (
+          <a href={ctaSecondary.href} class="inline-block text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:-translate-y-0.5 backdrop-blur-sm" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.3)">
+            {ctaSecondary.label}
+          </a>
+        )}
+      </div>
+    )}
+  </div>
+
+  <!-- Scroll indicator (only on tall heroes) -->
+  {tall && (
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 scroll-indicator">
+      <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+      </svg>
+    </div>
+  )}
+</section>

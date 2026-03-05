@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test 5 — No Tailwind CSS</title>
+<!-- NO external CSS loaded -->
+<style>
+  body { margin: 0; font-family: system-ui, sans-serif; color: #1f2937; }
+  .debug { position:fixed;top:0;left:0;right:0;background:purple;color:white;padding:8px;font-size:14px;z-index:9999;text-align:center; }
+  section { padding: 2rem 1rem; }
+  h2 { text-align:center; font-size:1.5rem; margin-bottom:1rem; }
+  .flex-grid { display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .card { width:calc(50% - 0.25rem); background:#fff; border:1px solid #e5e7eb; border-radius:0.75rem; overflow:hidden; text-decoration:none; color:inherit; }
+  .card img { width:100%; height:120px; object-fit:cover; display:block; }
+  .card-body { padding:0.5rem; }
+  .card-body h3 { font-size:0.9rem; margin:0 0 0.25rem; }
+  .card-body p { font-size:0.75rem; color:#6b7280; margin:0; }
+  .gallery-img { width:calc(50% - 0.25rem); height:120px; object-fit:cover; border-radius:0.75rem; display:block; }
+  .dark-section { background:#14532d; color:white; }
+  .gray-section { background:#f9fafb; }
+</style>
+</head>
+<body>
+
+<div class="debug" id="debug-info"></div>
+
+<!-- HERO -->
+<section class="dark-section" style="min-height:60vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;">
+  <img src="/images/hero-home.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.5;">
+  <div style="position:relative;z-index:1;padding:2rem;">
+    <h1 style="font-size:2rem;color:white;">Professional Landscaping in Madison, WI</h1>
+    <p style="color:rgba(255,255,255,0.8);">Licensed, insured, and locally owned since 2014.</p>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="dark-section" style="padding:0.75rem 1rem;text-align:center;">
+  <span style="color:rgba(255,255,255,0.7);font-size:0.85rem;">Serving Madison Since 2014 | Licensed & Insured | 500+ Projects | Free Estimates</span>
+</section>
+
+<!-- INTRO -->
+<section style="text-align:center;max-width:40rem;margin:0 auto;">
+  <p style="color:#4b5563;">Greenform Landscaping Solutions provides dependable landscaping for homes and businesses across the Madison area.</p>
+</section>
+
+<!-- SERVICES — 6 cards in flex grid -->
+<section class="gray-section">
+  <h2>What We Do</h2>
+  <div class="flex-grid" style="max-width:80rem;margin:0 auto;">
+    <a href="#" class="card"><img src="/images/svc-design.jpg" alt=""><div class="card-body"><h3>Landscape Design</h3><p>Custom outdoor layouts.</p></div></a>
+    <a href="#" class="card"><img src="/images/svc-lawn.jpg" alt=""><div class="card-body"><h3>Lawn Installation</h3><p>Professional sod or seed.</p></div></a>
+    <a href="#" class="card"><img src="/images/svc-hardscape.jpg" alt=""><div class="card-body"><h3>Hardscaping</h3><p>Durable patios and walkways.</p></div></a>
+    <a href="#" class="card"><img src="/images/svc-irrigation.jpg" alt=""><div class="card-body"><h3>Irrigation Systems</h3><p>Smart watering systems.</p></div></a>
+    <a href="#" class="card"><img src="/images/svc-commercial.jpg" alt=""><div class="card-body"><h3>Commercial Maintenance</h3><p>Reliable grounds care.</p></div></a>
+    <a href="#" class="card"><img src="/images/svc-trees.jpg" alt=""><div class="card-body"><h3>Tree & Shrub Care</h3><p>Expert pruning.</p></div></a>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section style="text-align:center;">
+  <h2>How It Works</h2>
+  <div style="display:flex;justify-content:center;gap:2rem;">
+    <div><div style="width:3rem;height:3rem;background:#16a34a;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 0.5rem;font-weight:bold;">1</div><strong>Request a Quote</strong></div>
+    <div><div style="width:3rem;height:3rem;background:#16a34a;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 0.5rem;font-weight:bold;">2</div><strong>Review Your Plan</strong></div>
+    <div><div style="width:3rem;height:3rem;background:#16a34a;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 0.5rem;font-weight:bold;">3</div><strong>We Get to Work</strong></div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="dark-section" style="text-align:center;">
+  <h2>Why Choose Us</h2>
+  <div style="display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center;">
+    <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:0.75rem;padding:1rem;width:calc(50% - 0.25rem);"><span style="font-weight:600;">Licensed & Insured</span></div>
+    <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:0.75rem;padding:1rem;width:calc(50% - 0.25rem);"><span style="font-weight:600;">On-Time Scheduling</span></div>
+    <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:0.75rem;padding:1rem;width:calc(50% - 0.25rem);"><span style="font-weight:600;">Clear Communication</span></div>
+    <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:0.75rem;padding:1rem;width:calc(50% - 0.25rem);"><span style="font-weight:600;">Written Proposals</span></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="gray-section">
+  <h2>What Our Clients Say</h2>
+  <div style="max-width:40rem;margin:0 auto;">
+    <div style="background:white;border-left:4px solid #22c55e;border-radius:0.75rem;padding:1rem;margin-bottom:0.75rem;"><p style="font-style:italic;">"They redesigned our front yard and it looks incredible."</p><strong>Sarah M.</strong></div>
+    <div style="background:white;border-left:4px solid #22c55e;border-radius:0.75rem;padding:1rem;margin-bottom:0.75rem;"><p style="font-style:italic;">"Consistent, professional, and easy to work with."</p><strong>David R.</strong></div>
+    <div style="background:white;border-left:4px solid #22c55e;border-radius:0.75rem;padding:1rem;"><p style="font-style:italic;">"Fair pricing and honest communication the whole way."</p><strong>Jennifer L.</strong></div>
+  </div>
+</section>
+
+<!-- GALLERY — 6 images -->
+<section>
+  <h2>Our Work</h2>
+  <div class="flex-grid" style="max-width:80rem;margin:0 auto;">
+    <img src="/images/work-1.jpg" alt="1" class="gallery-img">
+    <img src="/images/work-2.jpg" alt="2" class="gallery-img">
+    <img src="/images/work-3.jpg" alt="3" class="gallery-img">
+    <img src="/images/work-4.jpg" alt="4" class="gallery-img">
+    <img src="/images/work-5.jpg" alt="5" class="gallery-img">
+    <img src="/images/work-6.jpg" alt="6" class="gallery-img">
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="gray-section">
+  <h2>FAQ</h2>
+  <div style="max-width:40rem;margin:0 auto;">
+    <div style="border:1px solid #e5e7eb;border-radius:0.75rem;padding:1rem;margin-bottom:0.5rem;"><strong>How much does it cost?</strong></div>
+    <div style="border:1px solid #e5e7eb;border-radius:0.75rem;padding:1rem;margin-bottom:0.5rem;"><strong>Are you licensed?</strong></div>
+    <div style="border:1px solid #e5e7eb;border-radius:0.75rem;padding:1rem;margin-bottom:0.5rem;"><strong>How long does a project take?</strong></div>
+    <div style="border:1px solid #e5e7eb;border-radius:0.75rem;padding:1rem;margin-bottom:0.5rem;"><strong>Do you offer maintenance?</strong></div>
+    <div style="border:1px solid #e5e7eb;border-radius:0.75rem;padding:1rem;"><strong>What areas do you serve?</strong></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="dark-section" style="text-align:center;">
+  <h2>Ready to Transform Your Property?</h2>
+  <p style="color:rgba(255,255,255,0.8);">Let's talk about your project.</p>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#111827;color:#9ca3af;padding:2rem;text-align:center;">
+  <p style="font-weight:bold;color:white;">Greenform</p>
+  <p style="font-size:0.85rem;">(608) 733-9142 | info@greenformlandscaping.com</p>
+  <p style="font-size:0.75rem;color:#6b7280;">© 2026 Greenform Landscaping Solutions.</p>
+</footer>
+
+<script>
+window.addEventListener('load', function() {
+  var cards = document.querySelectorAll('.flex-grid > a.card').length;
+  var gallery = document.querySelectorAll('.flex-grid > img.gallery-img').length;
+  document.getElementById('debug-info').textContent = 'TEST5 Cards:' + cards + ' | Gallery:' + gallery;
+});
+</script>
+</body>
+</html>

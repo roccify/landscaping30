@@ -1,0 +1,552 @@
+{
+  "_INSTRUCTIONS": "REPLACE ALL DEMO DATA BELOW WITH CLIENT INFO. Business name, phone, email, address, hours, services, testimonials, FAQ, images — everything must be customized. Delete this field when done.",
+  "businessName": "Greenform Landscaping Solutions",
+  "shortName": "Greenform",
+  "tagline": "Madison's Trusted Landscaping Team Since 2014",
+  "accentColor": "green",
+  "foundedYear": 2014,
+  "contact": {
+    "phoneDisplay": "(608) 733-9142",
+    "phoneClick": "tel:+16087339142",
+    "email": "info@greenformlandscaping.com",
+    "address": "5525 Portage Rd, Madison, WI 53704",
+    "mapCaption": "Proudly serving Madison and surrounding areas",
+    "serviceArea": "Madison, WI and nearby towns including Fitchburg, Sun Prairie, Verona, and Middleton",
+    "googleMapsEmbed": "https://maps.google.com/maps?q=5525+Portage+Rd,+Madison,+WI+53704&t=&z=15&ie=UTF8&iwloc=&output=embed"
+  },
+  "hours": {
+    "weekdays": "Mon–Fri: 7:00 AM – 6:00 PM",
+    "saturday": "Sat: 8:00 AM – 2:00 PM",
+    "sunday": "Sun: Closed"
+  },
+  "social": {
+    "facebook": "https://facebook.com/greenformlandscaping",
+    "instagram": "https://instagram.com/greenformlandscaping",
+    "google": "https://g.page/greenformlandscaping",
+    "yelp": "https://yelp.com/biz/greenform-landscaping-madison"
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Services",
+      "href": "/services",
+      "dropdown": true
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "heroes": {
+    "home": {
+      "headline": "Professional Landscaping in Madison, WI",
+      "subheadline": "Licensed, insured, and locally owned since 2014. From design to maintenance, we keep residential and commercial properties looking their best — with clear pricing and reliable scheduling.",
+      "ctaPrimary": {
+        "label": "Request Free Quote",
+        "href": "/contact"
+      },
+      "ctaSecondary": {
+        "label": "Call (608) 733-9142",
+        "href": "tel:+16087339142"
+      },
+      "image": {
+        "url": "/images/hero-home.jpg",
+        "alt": "Beautiful landscaped residential yard with green lawn and stone pathway",
+        "fallback": "linear-gradient(135deg, #166534 0%, #14532d 100%)"
+      }
+    },
+    "services": {
+      "headline": "Our Landscaping Services",
+      "subheadline": "From landscape design to seasonal maintenance — reliable solutions for every outdoor space.",
+      "image": {
+        "url": "/images/hero-services.jpg",
+        "alt": "Professional landscaping team working on a residential property",
+        "fallback": "linear-gradient(135deg, #166534 0%, #14532d 100%)"
+      }
+    },
+    "about": {
+      "headline": "About Greenform Landscaping",
+      "subheadline": "Locally owned. Professionally run. Committed to every property we serve.",
+      "image": {
+        "url": "/images/hero-about.jpg",
+        "alt": "Greenform Landscaping team at work on a project",
+        "fallback": "linear-gradient(135deg, #166534 0%, #14532d 100%)"
+      }
+    },
+    "contact": {
+      "headline": "Get in Touch With Us",
+      "subheadline": "Ready to talk about your property? Reach out for a free quote or call us directly.",
+      "image": {
+        "url": "/images/hero-contact.jpg",
+        "alt": "Well-maintained garden path through lush green landscape",
+        "fallback": "linear-gradient(135deg, #166534 0%, #14532d 100%)"
+      }
+    }
+  },
+  "socialProof": [
+    {
+      "text": "Serving Madison Since 2014",
+      "icon": "star"
+    },
+    {
+      "text": "Licensed & Insured",
+      "icon": "shield"
+    },
+    {
+      "text": "500+ Projects Completed",
+      "icon": "trophy"
+    },
+    {
+      "text": "Free Estimates",
+      "icon": "dollar"
+    }
+  ],
+  "intro": {
+    "text": "Greenform Landscaping Solutions provides dependable landscaping for homes and businesses across the Madison area. We handle everything from design and installation to seasonal upkeep — so your outdoor space stays healthy, functional, and well-maintained year-round."
+  },
+  "homepageServiceIds": [
+    "landscape-design",
+    "lawn-installation",
+    "hardscaping",
+    "irrigation-systems",
+    "commercial-maintenance",
+    "tree-shrub-care"
+  ],
+  "howItWorks": {
+    "headline": "How It Works",
+    "subheadline": "Getting started is simple. Here's what to expect when you reach out.",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Request a Quote",
+        "description": "Fill out our contact form or give us a call. Tell us about your property and what you're looking for."
+      },
+      {
+        "number": "2",
+        "title": "Review Your Plan",
+        "description": "We'll visit your property, assess the scope, and send you a clear written proposal with no hidden costs."
+      },
+      {
+        "number": "3",
+        "title": "We Get to Work",
+        "description": "Once approved, our crew handles everything — on schedule, on budget, and with full cleanup when we're done."
+      }
+    ]
+  },
+  "services": [
+    {
+      "id": "landscape-design",
+      "name": "Landscape Design",
+      "shortDescription": "Custom outdoor layouts tailored to your property, lifestyle, and Wisconsin's climate.",
+      "icon": "pencil",
+      "image": {
+        "url": "/images/svc-design.jpg",
+        "alt": "Custom landscape design plan with garden layout",
+        "fallback": "linear-gradient(135deg, #166534 0%, #22c55e 100%)"
+      },
+      "problem": [
+        "An outdated or poorly planned yard can make your entire property feel neglected. Maybe the layout doesn't match how you actually use the space, or drainage problems leave puddles every time it rains.",
+        "Without a clear plan, it's easy to end up with mismatched plantings, wasted areas, and features that don't work together. Over time, these issues add up — lowering curb appeal and making your outdoor space more frustrating than enjoyable.",
+        "Putting off a redesign usually means the problems get worse. Erosion deepens. Plants outgrow their spots. And the cost of fixing everything later is almost always higher than getting it right from the start."
+      ],
+      "solution": [
+        "We start with a site visit to understand your property — the soil, the sunlight, the slopes, and how you want to use the space. Then we create a scaled design that addresses every issue, from drainage to plant placement.",
+        "Each design is built around your property's specific conditions and your preferences. We use CAD-based drawings so you can see the full plan before any work begins, including plant lists, hardscape specs, and phased build-out options if needed.",
+        "The goal is simple: give you a clear, professional plan that makes the most of your outdoor space — one that looks great, works well, and holds up through Wisconsin's seasons."
+      ],
+      "benefits": [
+        "Visual Plan Before Any Work Begins",
+        "Designs Matched to Local Climate",
+        "Improved Property Value and Function",
+        "Phased Build-Out Options Available"
+      ],
+      "keywords": [
+        "landscape design madison",
+        "backyard planning",
+        "custom outdoor layout"
+      ]
+    },
+    {
+      "id": "lawn-installation",
+      "name": "Lawn Installation",
+      "shortDescription": "Healthy, lasting lawns through proper soil prep, grading, and professional sod or seed installation.",
+      "icon": "sun",
+      "image": {
+        "url": "/images/svc-lawn.jpg",
+        "alt": "Fresh sod being installed on a prepared lawn area",
+        "fallback": "linear-gradient(135deg, #166534 0%, #22c55e 100%)"
+      },
+      "problem": [
+        "Patchy, thin, or bare spots in your lawn make the whole yard look worn out. It's a common problem — especially after construction, heavy foot traffic, or a few tough Wisconsin winters.",
+        "The frustrating part is that overseeding or fertilizing on its own rarely fixes the real issue. If the soil underneath is compacted or poorly graded, new grass won't establish the way it should.",
+        "The longer a damaged lawn goes untreated, the more weeds move in and the harder it becomes to bring it back. What starts as a small patch can turn into a yard-wide problem over a single season."
+      ],
+      "solution": [
+        "We start by testing and preparing the soil — correcting pH levels, improving drainage, and regrading where needed. This gives new grass the foundation it needs to actually take root and thrive.",
+        "From there, we install new lawns using sod for instant results or hydroseed for larger areas. For renovation work, we dethatch, aerate, and overseed with grass varieties matched to your yard's sun and shade patterns.",
+        "Every lawn we install is built to last. We don't just lay sod on top of whatever's there — we make sure the ground underneath is right first, so you get a lawn that stays green and fills in properly."
+      ],
+      "benefits": [
+        "Soil-Tested for Long-Term Results",
+        "Sod or Seed Options Available",
+        "Grading and Drainage Included",
+        "Grass Types Matched to Your Yard"
+      ],
+      "keywords": [
+        "lawn installation madison",
+        "sod services wisconsin"
+      ]
+    },
+    {
+      "id": "hardscaping",
+      "name": "Hardscaping",
+      "shortDescription": "Durable patios, walkways, and retaining walls designed to handle Wisconsin weather year after year.",
+      "icon": "grid",
+      "image": {
+        "url": "/images/svc-hardscape.jpg",
+        "alt": "Stone paver patio with retaining wall and outdoor seating",
+        "fallback": "linear-gradient(135deg, #166534 0%, #22c55e 100%)"
+      },
+      "problem": [
+        "Cracked concrete, uneven walkways, and eroding slopes aren't just eyesores — they're safety hazards. In Wisconsin, freeze-thaw cycles are especially hard on poorly built hardscapes.",
+        "Without proper structure, outdoor living areas feel unfinished. You might have a great yard but no real space to sit, entertain, or move through it comfortably.",
+        "Ignoring slope erosion or settling pavers leads to bigger structural problems down the road. Water damage, shifting walls, and trip hazards only get worse with time."
+      ],
+      "solution": [
+        "We build patios, walkways, and retaining walls using high-quality pavers, natural stone, and engineered block systems. Every project starts with proper grading, compaction, and drainage planning.",
+        "Our crews use laser leveling and geogrid reinforcement where needed to make sure everything stays put — even through harsh winters. We match materials and patterns to your existing landscape so it all feels connected.",
+        "You get a finished outdoor space that's functional, attractive, and built to handle years of Wisconsin weather without cracking, shifting, or settling."
+      ],
+      "benefits": [
+        "Engineered for Wisconsin Winters",
+        "Pavers, Stone, and Block Options",
+        "Proper Drainage Built In",
+        "Low-Maintenance and Long-Lasting"
+      ],
+      "keywords": [
+        "hardscaping madison",
+        "patio builder wi"
+      ]
+    },
+    {
+      "id": "irrigation-systems",
+      "name": "Irrigation Systems",
+      "shortDescription": "Smart watering systems that keep your lawn and gardens healthy while reducing water waste.",
+      "icon": "droplet",
+      "image": {
+        "url": "/images/svc-irrigation.jpg",
+        "alt": "Sprinkler irrigation system watering a green lawn",
+        "fallback": "linear-gradient(135deg, #166534 0%, #22c55e 100%)"
+      },
+      "problem": [
+        "Hand-watering a lawn is time-consuming and inconsistent. Some areas get too much water, others not enough — and you end up with dead spots, brown patches, and an uneven yard.",
+        "Older irrigation systems are often just as bad. Broken heads, poor zone coverage, and outdated controllers waste water and drive up utility bills.",
+        "In a climate like Madison's, where summer rain is unpredictable, relying on guesswork means your plants and lawn are always one dry spell away from stress or damage."
+      ],
+      "solution": [
+        "We design zone-controlled irrigation systems that deliver the right amount of water to each area of your property — lawns, beds, trees, and slopes all get what they need, automatically.",
+        "Systems include moisture sensors and programmable controllers so watering adjusts based on conditions, not a fixed timer. We also service and retrofit older systems.",
+        "Every installation includes seasonal blowout scheduling to protect your system through winter. You get reliable, efficient watering without the hassle."
+      ],
+      "benefits": [
+        "Zone-Controlled for Even Coverage",
+        "Smart Sensors Reduce Water Waste",
+        "Seasonal Blowout Service Included",
+        "Lower Water Bills Over Time"
+      ],
+      "keywords": [
+        "irrigation madison",
+        "sprinkler installation wi"
+      ]
+    },
+    {
+      "id": "commercial-maintenance",
+      "name": "Commercial Maintenance",
+      "shortDescription": "Reliable, scheduled grounds maintenance that keeps your business looking professional all year.",
+      "icon": "building",
+      "image": {
+        "url": "/images/svc-commercial.jpg",
+        "alt": "Well-maintained commercial property grounds with manicured lawn",
+        "fallback": "linear-gradient(135deg, #166534 0%, #22c55e 100%)"
+      },
+      "problem": [
+        "When your landscaping company misses visits or does inconsistent work, it shows — and your customers notice.",
+        "A lot of commercial property managers have been through this: unreliable crews, no communication, and no accountability when things aren't done right.",
+        "Without a clear maintenance plan, small issues compound. Weeds take over. Mulch thins out. And by the time you notice, catching up costs more than staying ahead would have."
+      ],
+      "solution": [
+        "We provide scheduled mowing, edging, trimming, fertilizing, and seasonal cleanups on a consistent rotation. Every property gets a dedicated account manager and monthly check-ins.",
+        "Our crews are GPS-tracked and dispatch-confirmed, so you always know when we're on-site and what was completed.",
+        "You get professional grounds that reflect your business — maintained reliably, communicated clearly, and backed by a team that takes ownership of your property's appearance."
+      ],
+      "benefits": [
+        "Dedicated Account Manager",
+        "GPS-Tracked Crews and Visit Logs",
+        "Consistent Scheduled Service",
+        "Monthly Reporting and Check-Ins"
+      ],
+      "keywords": [
+        "commercial landscaping madison",
+        "business grounds maintenance"
+      ]
+    },
+    {
+      "id": "tree-shrub-care",
+      "name": "Tree & Shrub Care",
+      "shortDescription": "Expert pruning, treatment, and care to keep your trees and shrubs healthy and looking their best.",
+      "icon": "tree",
+      "image": {
+        "url": "/images/svc-trees.jpg",
+        "alt": "Healthy mature trees with well-maintained canopy on residential property",
+        "fallback": "linear-gradient(135deg, #166534 0%, #22c55e 100%)"
+      },
+      "problem": [
+        "Trees and shrubs that aren't maintained properly become liabilities. Dead branches fall. Disease spreads. Overgrown shrubs block windows and crowd walkways.",
+        "A lot of homeowners don't realize that improper pruning can actually weaken a tree and make problems worse over time.",
+        "Left alone, pest infestations and fungal diseases can kill mature trees that took decades to grow."
+      ],
+      "solution": [
+        "We provide structural pruning, selective thinning, and shaping for both trees and ornamental shrubs. Every cut is made with purpose.",
+        "For trees showing signs of stress, disease, or pest activity, we assess the issue and recommend treatment options including systemic insecticides and deep-root fertilization.",
+        "Our team knows which species grow here, how they behave through the seasons, and what they need to stay healthy."
+      ],
+      "benefits": [
+        "Certified Pruning Techniques",
+        "Disease and Pest Treatment",
+        "Deep-Root Fertilization Available",
+        "Safety-Focused Branch Removal"
+      ],
+      "keywords": [
+        "tree trimming madison",
+        "shrub pruning wi"
+      ]
+    }
+  ],
+  "whyChooseUs": [
+    {
+      "icon": "shield",
+      "text": "Licensed & Fully Insured"
+    },
+    {
+      "icon": "clock",
+      "text": "Reliable On-Time Scheduling"
+    },
+    {
+      "icon": "chat",
+      "text": "Clear Upfront Communication"
+    },
+    {
+      "icon": "document",
+      "text": "Detailed Written Proposals"
+    }
+  ],
+  "testimonials": [
+    {
+      "text": "They redesigned our front yard and it looks incredible. The crew was on time, kept the site clean, and the final result was exactly what we discussed. Couldn't be happier.",
+      "name": "Sarah M.",
+      "location": "Madison, WI",
+      "rating": 5
+    },
+    {
+      "text": "We've used Greenform for our office property maintenance for two years. Consistent, professional, and easy to work with. They actually follow through on what they promise.",
+      "name": "David R.",
+      "location": "Fitchburg, WI",
+      "rating": 5
+    },
+    {
+      "text": "Had a drainage issue ruining our backyard. Greenform came out, explained the problem clearly, and fixed it within a week. Fair pricing and honest communication the whole way.",
+      "name": "Jennifer L.",
+      "location": "Sun Prairie, WI",
+      "rating": 5
+    }
+  ],
+  "ctaBanner": {
+    "headline": "Ready to Transform Your Property?",
+    "subheadline": "Licensed and insured team with clear pricing and reliable scheduling. Let's talk about your project.",
+    "ctaPrimary": {
+      "label": "Request Free Quote",
+      "href": "/contact"
+    },
+    "ctaSecondary": {
+      "label": "Call (608) 733-9142",
+      "href": "tel:+16087339142"
+    },
+    "image": {
+      "url": "/images/cta-banner.jpg",
+      "alt": "Beautifully landscaped backyard with stone patio at golden hour",
+      "fallback": "linear-gradient(135deg, #166534 0%, #14532d 100%)"
+    }
+  },
+  "about": {
+    "originStory": [
+      "Greenform Landscaping Solutions started in 2014 with a simple idea: do reliable landscaping work and communicate clearly with every client. No surprises. No shortcuts. Just solid planning and consistent execution.",
+      "What began as a small residential operation in Madison has grown into a full-service landscaping company serving homes and businesses across Dane County. We've earned that growth by showing up on time, doing what we say we'll do, and treating every property like it matters.",
+      "Today, we're a team of trained professionals who handle everything from design and installation to year-round maintenance. We're proud to be locally owned, and we plan to keep it that way."
+    ],
+    "storyImage": {
+      "url": "/images/about-story.jpg",
+      "alt": "Greenform Landscaping founder planning a project at a residential property",
+      "fallback": "linear-gradient(135deg, #166534 0%, #22c55e 100%)"
+    },
+    "team": {
+      "description": "Our crew brings over 30 combined years of landscaping experience. From designers and foremen to installation specialists and maintenance techs — every team member is trained, respectful, and committed to quality work. We're the kind of team that cleans up before they leave and checks in after the job is done.",
+      "image": {
+        "url": "/images/about-team.jpg",
+        "alt": "Greenform Landscaping team working together on an installation project",
+        "fallback": "linear-gradient(135deg, #166534 0%, #22c55e 100%)"
+      }
+    },
+    "credentials": [
+      {
+        "icon": "award",
+        "text": "WLCA Member"
+      },
+      {
+        "icon": "clipboard",
+        "text": "Licensed Pesticide Applicator"
+      },
+      {
+        "icon": "shield",
+        "text": "General Liability Insured"
+      },
+      {
+        "icon": "leaf",
+        "text": "Sustainable Practices Focus"
+      },
+      {
+        "icon": "ruler",
+        "text": "CAD-Based Design Planning"
+      },
+      {
+        "icon": "pin",
+        "text": "Locally Owned Since 2014"
+      }
+    ],
+    "quickFacts": [
+      {
+        "number": "10+",
+        "label": "Years in Business"
+      },
+      {
+        "number": "500+",
+        "label": "Projects Completed"
+      },
+      {
+        "number": "5",
+        "label": "Communities Served"
+      },
+      {
+        "number": "30+",
+        "label": "Years Combined Experience"
+      }
+    ]
+  },
+  "contactForm": {
+    "contactEmail": "fugirajmo@gmail.com",
+    "heading": "Send Us a Message",
+    "subheading": "Tell us about your project and we'll get back to you within one business day.",
+    "fields": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "message": "Tell us about your project"
+    },
+    "submitLabel": "Send Message"
+  },
+  "seo": {
+    "home": {
+      "title": "Greenform Landscaping Solutions | Professional Landscaping in Madison, WI",
+      "description": "Licensed and insured landscaping services in Madison, WI. Landscape design, lawn installation, hardscaping, irrigation, and seasonal maintenance for homes and businesses.",
+      "ogImage": "/images/hero-home.jpg"
+    },
+    "services": {
+      "title": "Landscaping Services | Greenform Landscaping Solutions – Madison, WI",
+      "description": "Full-service landscaping in Madison, WI: landscape design, lawn installation, hardscaping, seasonal cleanups, irrigation, commercial maintenance, and tree care.",
+      "ogImage": "/images/hero-services.jpg"
+    },
+    "about": {
+      "title": "About Us | Greenform Landscaping Solutions – Madison, WI",
+      "description": "Locally owned since 2014. Learn about the Greenform team, our approach to landscaping, and why Madison-area homeowners and businesses trust us with their properties.",
+      "ogImage": "/images/hero-about.jpg"
+    },
+    "contact": {
+      "title": "Contact Us | Greenform Landscaping Solutions – Madison, WI",
+      "description": "Get a free landscaping quote from Greenform Landscaping Solutions in Madison, WI. Call (608) 733-9142 or fill out our contact form.",
+      "ogImage": "/images/hero-contact.jpg"
+    }
+  },
+  "footer": {
+    "copyright": "Greenform Landscaping Solutions. All rights reserved."
+  },
+  "gallery": [
+    {
+      "url": "/images/work-1.jpg",
+      "alt": "Completed residential landscaping project with patio and garden beds"
+    },
+    {
+      "url": "/images/work-2.jpg",
+      "alt": "Custom stone walkway installation through front yard"
+    },
+    {
+      "url": "/images/work-3.jpg",
+      "alt": "Backyard transformation with new lawn and retaining wall"
+    },
+    {
+      "url": "/images/work-4.jpg",
+      "alt": "Commercial property grounds maintenance and seasonal planting"
+    },
+    {
+      "url": "/images/work-5.jpg",
+      "alt": "Irrigation system installation for large residential lawn"
+    },
+    {
+      "url": "/images/work-6.jpg",
+      "alt": "Tree pruning and shrub shaping on mature landscape"
+    }
+  ],
+  "faq": [
+    {
+      "question": "How much does a landscaping project cost?",
+      "answer": "Every property is different, so we provide free on-site estimates tailored to your specific needs. We'll walk through the scope together and give you a clear, written proposal with no hidden fees before any work begins."
+    },
+    {
+      "question": "Are you licensed and insured?",
+      "answer": "Yes. We carry full general liability insurance and all required state licenses. We're happy to provide documentation upon request."
+    },
+    {
+      "question": "How long does a typical project take?",
+      "answer": "Most residential projects are completed within 1–2 weeks depending on scope and weather. We'll give you a realistic timeline during the estimate and keep you updated throughout the process."
+    },
+    {
+      "question": "Do you offer maintenance after the project is done?",
+      "answer": "Yes. We offer ongoing maintenance plans that include mowing, edging, seasonal cleanups, and plant care. Many of our clients start with a project and then move to a monthly maintenance schedule."
+    },
+    {
+      "question": "What areas do you serve?",
+      "answer": "We serve Madison and surrounding communities including Fitchburg, Sun Prairie, Verona, Middleton, and Waunakee. If you're nearby and not sure if we cover your area, give us a call."
+    }
+  ],
+  "serviceArea": {
+    "headline": "Serving the Madison Area",
+    "subheadline": "Reliable landscaping services for homes and businesses across Dane County.",
+    "cities": [
+      "Madison",
+      "Fitchburg",
+      "Sun Prairie",
+      "Verona",
+      "Middleton",
+      "Waunakee",
+      "Monona",
+      "McFarland",
+      "Oregon",
+      "DeForest"
+    ]
+  }
+}

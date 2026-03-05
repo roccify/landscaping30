@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Grid Test</title>
+<style>
+  body { margin: 0; padding: 20px; font-family: sans-serif; background: #fff; }
+  h2 { text-align: center; margin: 20px 0 10px; }
+  p { text-align: center; color: gray; font-size: 14px; margin-bottom: 20px; }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .grid img {
+    width: calc(50% - 4px);
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<h2>Services (6 images)</h2>
+<p>If you see all 6, services grid works.</p>
+<div class="grid">
+  <img src="/images/svc-design.jpg" alt="1">
+  <img src="/images/svc-lawn.jpg" alt="2">
+  <img src="/images/svc-hardscape.jpg" alt="3">
+  <img src="/images/svc-irrigation.jpg" alt="4">
+  <img src="/images/svc-commercial.jpg" alt="5">
+  <img src="/images/svc-trees.jpg" alt="6">
+</div>
+
+<h2>Gallery (6 images)</h2>
+<p>If you see all 6, gallery works.</p>
+<div class="grid">
+  <img src="/images/work-1.jpg" alt="1">
+  <img src="/images/work-2.jpg" alt="2">
+  <img src="/images/work-3.jpg" alt="3">
+  <img src="/images/work-4.jpg" alt="4">
+  <img src="/images/work-5.jpg" alt="5">
+  <img src="/images/work-6.jpg" alt="6">
+</div>
+
+<h2>Result</h2>
+<p>12 images total. If any missing on iPhone 15, the problem is iOS Safari, not our code.</p>
+
+</body>
+</html>

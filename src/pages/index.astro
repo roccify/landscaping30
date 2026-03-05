@@ -1,0 +1,92 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import SocialProofBar from '../components/SocialProofBar.astro';
+import Intro from '../components/Intro.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import WhyChooseUs from '../components/WhyChooseUs.astro';
+import Testimonials from '../components/Testimonials.astro';
+import FAQ from '../components/FAQ.astro';
+import CTA from '../components/CTA.astro';
+import content from '../data/content.json';
+
+const seo = content.seo.home;
+const hero = content.heroes.home;
+const displayIds = content.homepageServiceIds;
+const services = content.services.filter(s => displayIds.includes(s.id));
+const gallery = content.gallery || [];
+---
+
+<Layout title={seo.title} description={seo.description} ogImage={seo.ogImage} page="home">
+  <Hero
+    headline={hero.headline}
+    subheadline={hero.subheadline}
+    image={hero.image}
+    ctaPrimary={hero.ctaPrimary}
+    ctaSecondary={hero.ctaSecondary}
+    tall={true}
+  />
+  <SocialProofBar />
+  <Intro />
+
+  <!-- SERVICES — flexbox instead of CSS grid -->
+  <section class="py-12 md:py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-4">What We Do</h2>
+        <p class="text-gray-500 max-w-xl mx-auto">Comprehensive landscaping services for residential and commercial properties across the Madison area.</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:1rem;">
+        {services.map((service) => (
+          <a href={`/services#${service.id}`} style="width:calc(50% - 0.5rem);text-decoration:none;color:inherit;" class="group bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+            <div style={`height:128px;overflow:hidden;background:${service.image.fallback}`}>
+              <img src={service.image.url} alt={service.image.alt} style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none'" />
+            </div>
+            <div style="padding:0.75rem;flex:1;display:flex;flex-direction:column;">
+              <h3 class="font-display" style="font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.25rem;">{service.name}</h3>
+              <p style="color:#6b7280;font-size:0.8rem;line-height:1.4;margin-bottom:0.5rem;flex:1;">{service.shortDescription}</p>
+              <span style="color:#16a34a;font-weight:600;font-size:0.8rem;">Learn More →</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <HowItWorks />
+  <WhyChooseUs />
+  <Testimonials />
+
+  <!-- GALLERY — flexbox instead of CSS grid -->
+  {gallery.length > 0 && (
+    <section class="py-10 md:py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+          <h2 class="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Work</h2>
+          <p class="text-gray-500 max-w-xl mx-auto">A look at some of our recent landscaping projects across the Madison area.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+          {gallery.map((item) => (
+            <div style="width:calc(50% - 0.25rem);height:140px;border-radius:0.75rem;overflow:hidden;background:linear-gradient(135deg,#166534,#22c55e);">
+              <img src={item.url} alt={item.alt} style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <FAQ />
+  <CTA />
+
+  <!-- DEBUG -->
+  <div id="debug-info" style="position:fixed;top:0;left:0;right:0;background:red;color:white;padding:8px;font-size:14px;z-index:9999;text-align:center;"></div>
+  <script is:inline>
+    window.addEventListener('load', function() {
+      var cards = document.querySelectorAll('section div[style*="flex-wrap"] > a').length;
+      var gallery = document.querySelectorAll('section div[style*="flex-wrap"] > div').length;
+      var d = document.getElementById('debug-info');
+      d.textContent = 'Cards:' + cards + ' | Gallery:' + gallery;
+    });
+  </script>
+</Layout>

@@ -1,0 +1,27 @@
+---
+import content from '../data/content.json';
+const facts = content.about.quickFacts;
+---
+
+<section class="py-16 md:py-24 bg-white">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="text-center mb-10">
+ <h2 class="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-4">Greenform at a Glance</h2>
+ </div>
+
+ <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+ {facts.map((fact, i) => (
+ <div
+ class="text-center bg-brand-50 rounded-xl p-8 border border-brand-100"
+
+
+ >
+ <div class="font-display text-4xl md:text-5xl font-bold text-brand-700 mb-2 count-up" data-count={fact.number}>
+ {fact.number}
+ </div>
+ <p class="text-gray-600 font-medium text-sm">{fact.label}</p>
+ </div>
+ ))}
+ </div>
+ </div>
+</section>

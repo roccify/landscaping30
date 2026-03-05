@@ -1,0 +1,33 @@
+---
+import content from '../data/content.json';
+const about = content.about;
+---
+
+<section class="py-16 md:py-24 bg-white">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
+ <!-- Text -->
+ <div class="lg:w-7/12">
+ <h2 class="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
+ <div class="space-y-4">
+ {about.originStory.map((p) => (
+ <p class="text-gray-600 leading-relaxed">{p}</p>
+ ))}
+ </div>
+ </div>
+
+ <!-- Image -->
+ <div class="lg:w-5/12">
+ <div class="rounded-xl overflow-hidden shadow-lg">
+ <img
+ src={about.storyImage.url}
+ alt={about.storyImage.alt}
+ class="w-full h-auto object-cover aspect-[4/3]"
+ loading="lazy"
+ onerror={`this.style.display='none';this.parentElement.style.background='${about.storyImage.fallback}'`}
+ />
+ </div>
+ </div>
+ </div>
+ </div>
+</section>

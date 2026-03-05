@@ -1,0 +1,21 @@
+---
+import content from '../data/content.json';
+import Icon from './Icon.astro';
+const items = content.socialProof;
+---
+
+<div class="bg-brand-950 border-b border-gray-800">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
+ <div class="flex items-center justify-center flex-wrap gap-x-3 gap-y-2 sm:gap-x-4">
+ {items.map((item, i) => (
+ <>
+ {i > 0 && <div class="hidden sm:block w-px h-4 bg-gray-700 flex-shrink-0"></div>}
+ <div class="flex items-center gap-2 text-gray-300 text-sm font-medium whitespace-nowrap">
+ <Icon name={item.icon} class="w-4 h-4 text-brand-400 flex-shrink-0" />
+ {item.text}
+ </div>
+ </>
+ ))}
+ </div>
+ </div>
+</div>

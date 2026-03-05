@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test 3 — Full page static copy</title>
+<link rel="stylesheet" href="/_astro/about.DwVwZYAL.css">
+<style>
+  .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+  @media (min-width: 768px) { .gallery-grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; } }
+  .gallery-item { position: relative; padding-bottom: 65%; border-radius: 0.75rem; overflow: hidden; background: linear-gradient(135deg, #166534, #22c55e); }
+  .gallery-item img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+</style>
+</head>
+<body class="font-body text-gray-800 bg-white antialiased">
+
+<!-- DEBUG -->
+<div id="debug-info" style="position:fixed;top:0;left:0;right:0;background:blue;color:white;padding:8px;font-size:14px;z-index:9999;text-align:center;"></div>
+
+<!-- HERO (simplified) -->
+<section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+  <div class="absolute inset-0" style="background:linear-gradient(135deg, #166534 0%, #14532d 100%);"></div>
+  <img src="/images/hero-home.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black" style="opacity:0.55;"></div>
+  <div class="relative z-10 max-w-4xl mx-auto px-4 text-center text-white pt-20">
+    <h1 class="font-display text-3xl md:text-5xl font-bold mb-6">Professional Landscaping in Madison, WI</h1>
+    <p class="text-white opacity-80 max-w-2xl mx-auto mb-8">Licensed, insured, and locally owned since 2014.</p>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<div class="bg-brand-950 border-b border-gray-800">
+  <div class="max-w-7xl mx-auto px-4 py-3.5">
+    <div class="flex items-center justify-center flex-wrap gap-x-3 gap-y-2">
+      <div class="text-gray-300 text-sm font-medium">Serving Madison Since 2014</div>
+      <div class="hidden sm:block w-px h-4 bg-gray-700"></div>
+      <div class="text-gray-300 text-sm font-medium">Licensed & Insured</div>
+      <div class="hidden sm:block w-px h-4 bg-gray-700"></div>
+      <div class="text-gray-300 text-sm font-medium">500+ Projects Completed</div>
+      <div class="hidden sm:block w-px h-4 bg-gray-700"></div>
+      <div class="text-gray-300 text-sm font-medium">Free Estimates</div>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="py-10 md:py-16 bg-white">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <p class="text-lg text-gray-600 leading-relaxed font-light">Greenform Landscaping Solutions provides dependable landscaping for homes and businesses across the Madison area.</p>
+  </div>
+</section>
+
+<!-- SERVICES GRID — 6 cards -->
+<section class="py-10 md:py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="font-display text-3xl font-bold text-gray-900 mb-4">What We Do</h2>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+      <a href="#" class="group bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm flex flex-col">
+        <div class="relative h-32 sm:h-52 overflow-hidden"><img src="/images/svc-design.jpg" alt="" class="w-full h-full object-cover"></div>
+        <div class="p-4"><h3 class="font-display text-lg font-semibold text-gray-900">Landscape Design</h3><p class="text-gray-500 text-sm">Custom outdoor layouts.</p></div>
+      </a>
+      <a href="#" class="group bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm flex flex-col">
+        <div class="relative h-32 sm:h-52 overflow-hidden"><img src="/images/svc-lawn.jpg" alt="" class="w-full h-full object-cover"></div>
+        <div class="p-4"><h3 class="font-display text-lg font-semibold text-gray-900">Lawn Installation</h3><p class="text-gray-500 text-sm">Professional sod or seed.</p></div>
+      </a>
+      <a href="#" class="group bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm flex flex-col">
+        <div class="relative h-32 sm:h-52 overflow-hidden"><img src="/images/svc-hardscape.jpg" alt="" class="w-full h-full object-cover"></div>
+        <div class="p-4"><h3 class="font-display text-lg font-semibold text-gray-900">Hardscaping</h3><p class="text-gray-500 text-sm">Durable patios and walkways.</p></div>
+      </a>
+      <a href="#" class="group bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm flex flex-col">
+        <div class="relative h-32 sm:h-52 overflow-hidden"><img src="/images/svc-irrigation.jpg" alt="" class="w-full h-full object-cover"></div>
+        <div class="p-4"><h3 class="font-display text-lg font-semibold text-gray-900">Irrigation Systems</h3><p class="text-gray-500 text-sm">Smart watering systems.</p></div>
+      </a>
+      <a href="#" class="group bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm flex flex-col">
+        <div class="relative h-32 sm:h-52 overflow-hidden"><img src="/images/svc-commercial.jpg" alt="" class="w-full h-full object-cover"></div>
+        <div class="p-4"><h3 class="font-display text-lg font-semibold text-gray-900">Commercial Maintenance</h3><p class="text-gray-500 text-sm">Reliable grounds care.</p></div>
+      </a>
+      <a href="#" class="group bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm flex flex-col">
+        <div class="relative h-32 sm:h-52 overflow-hidden"><img src="/images/svc-trees.jpg" alt="" class="w-full h-full object-cover"></div>
+        <div class="p-4"><h3 class="font-display text-lg font-semibold text-gray-900">Tree & Shrub Care</h3><p class="text-gray-500 text-sm">Expert pruning and treatment.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="py-10 md:py-16 bg-white">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="font-display text-3xl font-bold text-gray-900 mb-8">How It Works</h2>
+    <div class="grid grid-cols-3 gap-4">
+      <div><div class="w-14 h-14 rounded-full bg-brand-600 text-white flex items-center justify-center mx-auto mb-4 font-display font-bold text-xl">1</div><h3 class="font-display font-semibold mb-2">Request a Quote</h3></div>
+      <div><div class="w-14 h-14 rounded-full bg-brand-600 text-white flex items-center justify-center mx-auto mb-4 font-display font-bold text-xl">2</div><h3 class="font-display font-semibold mb-2">Review Your Plan</h3></div>
+      <div><div class="w-14 h-14 rounded-full bg-brand-600 text-white flex items-center justify-center mx-auto mb-4 font-display font-bold text-xl">3</div><h3 class="font-display font-semibold mb-2">We Get to Work</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="py-8 md:py-16 bg-brand-900">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="font-display text-3xl font-bold text-white mb-8">Why Choose Us</h2>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+      <div class="bg-white/5 rounded-xl p-4 border border-gray-700"><p class="text-white font-semibold text-sm">Licensed & Insured</p></div>
+      <div class="bg-white/5 rounded-xl p-4 border border-gray-700"><p class="text-white font-semibold text-sm">On-Time Scheduling</p></div>
+      <div class="bg-white/5 rounded-xl p-4 border border-gray-700"><p class="text-white font-semibold text-sm">Clear Communication</p></div>
+      <div class="bg-white/5 rounded-xl p-4 border border-gray-700"><p class="text-white font-semibold text-sm">Written Proposals</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-10 md:py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="font-display text-3xl font-bold text-gray-900 mb-8 text-center">What Our Clients Say</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl p-8 border-l-4 border-brand-500"><p class="text-gray-700 italic mb-4">"They redesigned our front yard and it looks incredible."</p><p class="font-semibold">Sarah M.</p></div>
+      <div class="bg-white rounded-xl p-8 border-l-4 border-brand-500"><p class="text-gray-700 italic mb-4">"Consistent, professional, and easy to work with."</p><p class="font-semibold">David R.</p></div>
+      <div class="bg-white rounded-xl p-8 border-l-4 border-brand-500"><p class="text-gray-700 italic mb-4">"Fair pricing and honest communication the whole way."</p><p class="font-semibold">Jennifer L.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY — 6 items -->
+<section class="py-10 md:py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="font-display text-3xl font-bold text-gray-900 mb-8 text-center">Our Work</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="/images/work-1.jpg" alt="1"></div>
+      <div class="gallery-item"><img src="/images/work-2.jpg" alt="2"></div>
+      <div class="gallery-item"><img src="/images/work-3.jpg" alt="3"></div>
+      <div class="gallery-item"><img src="/images/work-4.jpg" alt="4"></div>
+      <div class="gallery-item"><img src="/images/work-5.jpg" alt="5"></div>
+      <div class="gallery-item"><img src="/images/work-6.jpg" alt="6"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-10 md:py-16 bg-gray-50">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="font-display text-3xl font-bold text-gray-900 mb-8 text-center">FAQ</h2>
+    <div class="space-y-3">
+      <div class="border border-gray-200 rounded-xl p-5"><p class="font-semibold">How much does it cost?</p></div>
+      <div class="border border-gray-200 rounded-xl p-5"><p class="font-semibold">Are you licensed?</p></div>
+      <div class="border border-gray-200 rounded-xl p-5"><p class="font-semibold">How long does a project take?</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="relative py-20 overflow-hidden">
+  <div class="absolute inset-0" style="background:linear-gradient(135deg, #166534 0%, #14532d 100%);"></div>
+  <div class="absolute inset-0 bg-brand-900 opacity-90"></div>
+  <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+    <h2 class="font-display text-3xl font-bold text-white mb-4">Ready to Transform Your Property?</h2>
+    <p class="text-brand-100 opacity-80 text-lg mb-8">Let's talk about your project.</p>
+  </div>
+</section>
+
+<script>
+window.addEventListener('load', function() {
+  var cards = document.querySelectorAll('.grid.grid-cols-2 > a').length;
+  var gallery = document.querySelectorAll('.gallery-item').length;
+  var d = document.getElementById('debug-info');
+  d.textContent = 'TEST3 — Cards:' + cards + ' | Gallery:' + gallery;
+});
+</script>
+</body>
+</html>
